@@ -12,7 +12,7 @@ namespace security_example_basic.Repozitories
     {
         protected override void Seed(SecurityDataContext context)
         {
-            Role adminRole = new Role() { Name = "admins" };
+            Role adminRole = new Role() { Name = "admins" }; 
             adminRole = context.Roles.Add(adminRole);
             var salt1 = CryptoHelper.GenerateRandomSalt(); 
             User u1 = new User();
